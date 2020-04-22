@@ -16,6 +16,9 @@ def is_balanced(input_string):
 
     # iterate over each character in the string
 
+    if not input_string:
+        return True
+
     for i in input_string:
         if i in ["(", "{", "["]:
             stack.append(i)
