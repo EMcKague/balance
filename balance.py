@@ -19,14 +19,13 @@ def is_balanced(input_string):
     if not input_string:
         return True
 
+    if input_string
+
     for i in input_string:
         if i in ["(", "{", "["]:
             stack.append(i)
 
     else:
-        if not stack:
-            return False
-
         current = stack.pop()
         if current == "(":
             if i != ")":
