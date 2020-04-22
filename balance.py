@@ -20,18 +20,21 @@ def is_balanced(input_string):
         if i in ["(", "{", "["]:
             stack.append(i)
 
-    else:
-        current = stack.pop()
-        if current == "(":
-            if i != ")":
-                return False
-        if current == "{":
-            if i != "}":
-                return False
-        if current == "[":
-            if i != "]":
-                return False
+        else:
+            current = stack.pop()
+            if current == "(":
+                if i != ")":
+                    return False
+            if current == "{":
+                if i != "}":
+                    return False
+            if current == "[":
+                if i != "]":
+                    return False
 
+    # if the stack is not empty, False
+    if stack:
+        return False
     # if it has made it this far, it's balanced, True
     return True
 
