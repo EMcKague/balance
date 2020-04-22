@@ -32,9 +32,6 @@ def is_balanced(input_string):
             if i != "]":
                 return False
 
-    # if the stack is not empty, False
-    if stack:
-        return False
     # if it has made it this far, it's balanced, True
     return True
 
